@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aqui vas aprender a hacer un calendario"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <!--Esta forma es mas especifica para cada parte del calendario-->
+    <h1>Primera Forma</h1>
+    <form action="">
+      <label for="hora">
+        <span>Hora</span>
+        <input type="time" id="hora" name="hora" />
+      </label>
+      <br>
+      <label for="dia">
+        <span>Dia</span>
+        <input type="date" id="hora" name="dia" />
+      </label>
+      <br>
+      <label for="semana">
+        <span>Semana</span>
+        <input type="week" id="semana" name="semana" />
+      </label>
+      <br>
+      <label for="mes">
+        <span>Mes</span>
+        <input type="month" id="mes" name="mes" />
+      </label>
+      <br>
+      <input type="submit" />
+    </form>
+    <br><br>
+    <!--Esta formas es mas sencilla , se hace todo en un solo input-->
+    <h1>Segunda Forma</h1>
+    <form action="">
+      <label for="calendario">
+        <span>Calendario</span>
+        <input type="datetime-local" id="calendario" name="calendario" />
+        <input type="submit" />
+      </label>
+    </form>
+  </body>
+</html>

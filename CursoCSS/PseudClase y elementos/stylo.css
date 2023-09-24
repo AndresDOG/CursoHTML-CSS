@@ -1,0 +1,30 @@
+.main-nav__ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  background-color: grey;
+}
+
+.main-nav__ul-item {
+  display: inline-block;
+}
+
+.main-nav__ul-item a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Estos son para pseudoclases se usa : , esto define el estilo de un estado ej el hover*/
+.main-nav__ul-item a:hover {
+    color: green;
+}
+
+.main-nav__ul-item a:active {
+    color: red;
+}
+
+/* para seudo elementos se usa :: , define el estilo de un elemento ej despues del elemnto a  */
+.main-nav__ul-item  a::after {
+    content: " | ";
+}

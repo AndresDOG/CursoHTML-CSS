@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  max-width: 56rem;
+  height: 40rem;
+  border: 2px solid #000;
+  background-color: #378994;
+  margin-top: 2.4rem;
+}
+
+.titulo-container {
+  position: absolute;
+  top: -2.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  z-index: 10;
+  padding: 0.2rem 1.2rem;
+  width: 40rem;
+  height: 5rem;
+  background-color: bisque;
+}
+
+.titulo {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column; /* Los elementos hijos (img y figcaption) se apilarán verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+figure img {
+  position: relative;
+  max-width: 14rem;
+  height: auto;
+  margin-top: 4rem;
+  border: 2px solid #000;
+  border-radius: 1.5rem;
+}
+
+/* Estilos para la descripción de la figura */
+figcaption p {
+  padding: 3rem;
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}

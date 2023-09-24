@@ -1,0 +1,77 @@
+/* Estilo básico para todo el contenido dentro de <main> */
+main {
+    font-family: 'Arial', sans-serif; 
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 5px;
+}
+
+/* Estilo para los encabezados */
+main h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo para las listas (ul y ol) */
+main ul, main ol {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+main ol {
+    padding-left: 20px; 
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes */
+main figure {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0; 
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+main figure img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para las leyendas */
+main figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilo para los enlaces */
+main a {
+    color: #007BFF; 
+    text-decoration: none; 
+}
+
+main a:hover {
+    text-decoration: underline; 
+}
+
+/* Estilo específico para el enlace fuera de las listas */
+main > a {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+main > a:hover {
+    background-color: #0056b3;
+}

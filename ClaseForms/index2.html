@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aqui vas a validar y requerir los formularios de una persona"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario amigable</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h1>Registro de Usuario</h1>
+        <p>Por favor ingrese los siguientes datos.</p>
+        <label for="nombre">
+          <span>Ingresa tus nombres: </span>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tus nombre"
+            required
+            autocomplete="name"
+          />
+          <br /><br />
+        </label>
+        <label for="apellidos">
+          <span>Ingresa tus Apellidos: </span>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            placeholder="Tus apellidos"
+            required
+            autocomplete="name"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="correo">
+          <span>Ingresa tu email: </span>
+          <input
+            type="text"
+            id="correo"
+            name="correo"
+            placeholder="Tu email"
+            required
+            autocomplete="email"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="pais">
+          <span>Selecciona tu pais: </span>
+          <input list="Paises" required />
+          <datalist id="Paises">
+            <option value="Colombia">Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Alemania">Alemania</option>
+          </datalist>
+        </label>
+        <br />
+        <br />
+        <label for="nacimiento">
+          <span>Fecha de nacimiento : </span>
+          <input
+            type="date"
+            id="nacimiento"
+            name="nacimiento"
+            autocomplete="bday"
+            required
+          />
+        </label>
+        <br />
+        <br />
+        <label for="cp">
+          <span>Codigo Postal:</span>
+          <input
+            type="text"
+            id="cp"
+            name="cp"
+            placeholder="Codigo postal de tu area"
+            autocomplete="postal-code"
+            required
+          />
+        </label>
+        <br /><br />
+        <input type="submit" value="Registrar" />
+        <button>Sirve , fuera de formularios</button>
+      </form>
+    </main>
+  </body>
+</html>
